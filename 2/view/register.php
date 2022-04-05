@@ -2,12 +2,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Contatos</title>
+    <title>Produtos</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
-        .card-register-contact {
+        .card-register-product {
             padding: 15vh 0 0 0;
             width: 100%;
             margin: 0 auto;
@@ -26,30 +26,37 @@
     <div class="container">
         <div class="row">
 
-            <div class="card-register-contact">
+            <div class="card-register-product">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Adicionar Contato</h4>
+                        <h4>Adicionar Produto</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
 
                                 <form method="post" action="../controller/database.php">
+
+                                    <div class="form-group">
+                                        <label>Código</label>
+                                        <input type="text" name="id" class="form-control" placeholder="Código" required />
+                                    </div>
+
                                     <div class="form-group">
                                         <label>Nome</label>
-                                        <input type="text" class="form-control" placeholder="Nome" name="name" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Nome" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                        <label>Data de Compra</label>
+                                        <input type="date" name="date" class="form-control" placeholder="Data de Compra" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Telefone</label>
-                                        <input type="text" class="form-control" placeholder="Telefone" name="phone" required>
+                                        <label>Quatidade</label>
+                                        <input type="number" name="quantity" class="form-control" placeholder="Quantidade" required />
                                     </div>
+
 
                                     <div class="row mt-5">
                                         <div class="col-6">

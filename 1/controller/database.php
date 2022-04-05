@@ -3,7 +3,7 @@
     $email = str_replace(';', '-', $_POST['email']);
     $phone = str_replace(';', '-', $_POST['phone']);
 
-    $text = $name . ";" . $email . ";" . $phone . PHP_EOL;
+    $text = $name . ";" . $phone . ";" . $email . PHP_EOL;
     
     $file = fopen("contacts.txt", "a");
     fwrite($file, $text);

@@ -36,6 +36,11 @@ fclose($file);
             Andrey Fialho 2T
         </a>
 
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../index.php" class="nav-link">Questões</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="container">
@@ -72,8 +77,8 @@ fclose($file);
                                 ?>
 
                                     <h5 class="card-title"><?= $productInfo[1] ?></h5>
-                                    <h6 class="card-subtitle mb-2 text-muted"><?= $productInfo[2] ?></h6>
-                                    <p class="card-text"><?= $productInfo[3] ?></p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Data de Compra: <?= $productInfo[2] ?></h6>
+                                    <p class="card-text">Quantidade: <?= $productInfo[3] ?></p>
 
                                 <?php } ?>
 
@@ -87,11 +92,11 @@ fclose($file);
                         </div>
 
 
-                        <form action="controller/queryValidator.php" method="post">
+                        <form action="controller/queryValidator.php" method="get">
                             <div class="row mt-3">
 
                                 <div class="col-9">
-                                    <input type="search" class="form-control rounded btn-lg" placeholder="Código" aria-label="Search" name="query" required/>
+                                    <input type="search" class="form-control rounded btn-lg" placeholder="Código" aria-label="Search" name="query" required />
                                 </div>
 
                                 <div class="col-3">

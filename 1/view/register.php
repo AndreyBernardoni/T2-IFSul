@@ -21,6 +21,12 @@
         <a class="navbar-brand" href="#">
             Andrey Fialho 2T
         </a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../../index.php" class="nav-link">Questões</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="container">
@@ -57,7 +63,7 @@
                                         </div>
 
                                         <div class="col-6">
-                                            <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
+                                            <button class="btn btn-lg btn-info btn-block" type="submit">Registrar Contato</button>
                                         </div>
                                     </div>
                                 </form>

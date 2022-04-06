@@ -1,12 +1,8 @@
-<?php
-    session_start();
-?>
-
 <html>
 
 <head>
     <meta charset="utf-8" />
-    <title>Produtos</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -41,17 +37,25 @@
                 <div class="card">
                     <div class="card-header">
                         <h4 class="text-center">Login</h4>
+
                         <?php if (isset($_GET['error']) && $_GET['error'] == 1) { ?>
                             <div class="alert alert-danger" role="alert">
                                 Preencha todos os campos!
                             </div>
-                        <?php } ?>
-
-                        <?php if (isset($_GET['error']) && $_GET['error'] == 2) { ?>
+                        <?php }
+                        
+                        if (isset($_GET['error']) && $_GET['error'] == 2) { ?>
                             <div class="alert alert-danger" role="alert">
                                 Login ou senha incorretos!
                             </div>
+                        <?php }
+                        
+                        if (isset($_GET['success']) && $_GET['success'] == 1) { ?>
+                            <div class="alert alert-success" role="alert">
+                                Usuário cadastrado com sucesso!
+                            </div>
                         <?php } ?>
+
                     </div>
 
                     <div class="card-body">

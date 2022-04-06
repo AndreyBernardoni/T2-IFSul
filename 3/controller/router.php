@@ -14,6 +14,6 @@
 
     }else if (isset($_POST['login']) && $_POST['user'] == '' && $_POST['password'] == '') {
 
-        header('Location: ../view/register.php?error=1');
+        header('Location: ../index.php?error=1');
         
     }

@@ -9,7 +9,7 @@
     $text = $name . ";" . $phone . ";" . $email . PHP_EOL;
     
     // Abre o arquivo para escrita
-    $file = fopen("contacts.txt", "a");
+    $file = fopen("contacts.txt", "a+");
     fwrite($file, $text);
 
     // Fecha o arquivo

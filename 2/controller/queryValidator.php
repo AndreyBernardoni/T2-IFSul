@@ -11,7 +11,7 @@ if (isset($_GET['query'])) {
 
     $found = false;
     $products = array();
-    $file = fopen("products.txt", "r");
+    $file = fopen("products.txt", "r+");
 
     // Enquanto não for o fim do arquivo, pega o produto e armazena no array
     while (!feof($file)) {
